@@ -20,7 +20,7 @@ public class Application2 {
          * 9. 김정희
          * 10. 대조영
          * 11. 김유신
-         * 12. 이사부
+         * 12. 이순신
          *
          * -- 출력 예시 --
          * == 1분단 ==
@@ -31,9 +31,38 @@ public class Application2 {
          * == 2분단 ==
          * 장보고 이태백
          * 김정희 대조영
-         * 김유신 이사부
+         * 김유신 이순신
          */
+        String[] a = {"홍길동" ,"이순신" ,"유관순" ,"윤봉길" ,"장영실" ,"임꺽정" ,"장보고" ,"이태백" ,"김정희" ,"대조영" ,"김유신" ,"이순신"};
+        String[][] b = new String[3][2];
+        String[][] c = new String[3][2];
+        int count = 0;
 
+        for(int i = 0; i < 3; i++) {
+            for(int j = 0; j < 2; j++) {
+                b[i][j] = a[count++];
+            }
+        }
+        System.out.println("== 1분단 == ");
+        for(int i = 0; i < 3; i++) {
+            for(int j = 0; j < 2; j++) {
+                c[i][j] = a[count++];
+            }
+        }
+        for(String[] w : b) {
+            for(String x : w) {
+                System.out.print(x + " ");
+            }
+            System.out.println();
+        }
+        System.out.println();
+        System.out.println("== 2분단 == ");
+        for(String[] w : b) {
+            for(String x : w) {
+                System.out.print(x + " ");
+            }
+            System.out.println();
+        }
     }
 
 }

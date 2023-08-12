@@ -9,7 +9,9 @@ public class Application2 {
          * -- 출력 예시 --
          * abcdefghijklmnopqrstuvwxyz
          * */
-
+        for(int i = 0; i<26;i++) {
+            System.out.print((char) (i + 97));
+        }
     }
 
 }

@@ -6,6 +6,9 @@ public class Application {
     public static void main(String[] args) {
 
         // Calculator 클래스의 메소드를 호출 해서 실행
+        Calculator.checkMethod();
+        Calculator.sumTwoNumber(10, 20);
+        Calculator.multiTwoNumber(10, 20);
     }
     
 }
