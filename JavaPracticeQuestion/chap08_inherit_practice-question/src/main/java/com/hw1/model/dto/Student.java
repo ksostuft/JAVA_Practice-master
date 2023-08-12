@@ -12,9 +12,39 @@ public class Student extends Person {
         this.grade = grade;
         this.major = major;
     }
-
     @Override
     public String information() {
-        return super.information();
+        StringBuilder sb = new StringBuilder();
+        sb.append(getName());
+        sb.append(" | ");
+        sb.append(getAge());
+        sb.append(" | ");
+        sb.append(getHeight());
+        sb.append(" | ");
+        sb.append(getWeight());
+        sb.append(" | ");
+        sb.append(getGrade());
+        sb.append(" | ");
+        sb.append(getMajor());
+        return sb.toString();
+    }
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getGrade() {
+        return grade;
+    }
+
+    public void setGrade(int grade) {
+        this.grade = grade;
+    }
+
+    public String getMajor() {
+        return major;
+    }
+
+    public void setMajor(String major) {
+        this.major = major;
     }
 }
