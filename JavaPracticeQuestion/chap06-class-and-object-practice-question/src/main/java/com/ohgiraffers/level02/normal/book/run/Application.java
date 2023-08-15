@@ -1,7 +1,6 @@
-package com.greedy.level02.normal.book.run;
+package com.ohgiraffers.level02.normal.book.run;
 
-import com.greedy.level01.basic.member.model.dto.MemberDTO;
-import com.greedy.level02.normal.book.model.dto.BookDTO;
+import com.ohgiraffers.level02.normal.book.model.dto.BookDTO;
 
 public class Application {
     public static void main(String[] args) {

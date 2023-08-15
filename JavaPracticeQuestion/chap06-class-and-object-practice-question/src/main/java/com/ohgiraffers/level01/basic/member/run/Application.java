@@ -1,6 +1,6 @@
-package com.greedy.level01.basic.member.run;
+package com.ohgiraffers.level01.basic.member.run;
 
-import com.greedy.level01.basic.member.model.dto.MemberDTO;
+import com.ohgiraffers.level01.basic.member.model.dto.MemberDTO;
 
 public class Application {
     public static void main(String[] args) {

@@ -18,7 +18,7 @@ public class Person {
     }
 
     public String information() {
-        return null;
+        return "이름 = " + name + "나이 = " + age + "키 = " + height + "체중 = " + weight;
     }
 
     public String getName() {

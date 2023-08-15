@@ -1,4 +1,4 @@
-package com.greedy.level01.basic.member.model.dto;
+package com.ohgiraffers.level01.basic.member.model.dto;
 
 public class MemberDTO {
     private String id;

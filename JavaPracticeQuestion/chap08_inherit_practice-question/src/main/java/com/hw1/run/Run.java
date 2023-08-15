@@ -21,6 +21,7 @@ public class Run {
         while (true) {
 
             if(count > 10) {
+                sc.close();
                 break;
             }
             System.out.print("이름을 입력하세요 : ");
@@ -39,6 +40,7 @@ public class Run {
             employees[count-1] = new Employee(name, age, height, weight, salary, dept);
             System.out.print("계속 정보를 추가하시겠습니까? : ");
             if(!sc.nextLine().toUpperCase().equals("Y")) {
+                sc.close();
                 break;
             }
             count++;
@@ -50,18 +52,5 @@ public class Run {
                 System.out.println(employee.information());
             }
         }
-
-        // 3명의 학생 정보를 기록할 수 있게 객체 배열 할당 // 위의 사용데이터 참고하여 3명의 학생 정보 초기화// 위의 학생 정보 모두 출력 --> 향상된 for문 이용해서
-        // 최대 10명의 사원 정보를 기록할 수 있게 배열을 할당
-        // 사원들의 정보를 키보드로 계속 입력 받고 --> while(true) 무한 반복문을 통해
-        // 계속 추가할 것인지 물어보고, 대소문자 상관없이 ‘y’이면 계속 객체 추가
-        // 한 명씩 추가 될 때마다 카운트함
-        // 2명 정도의 사원 정보를 입력 받아 객체 배열에 저장 // 현재 기록된 사원들의 정보를 모두 출력
-        /*
-        * 1. 3명의 학생 정보를 기록할 수 있 게 객체 배열을 할당하고 아래의 사 용데이터를 참고하여 3명의 학생 객 체 생성 후 반복문을 통해 출력
-        * 2. 최대 10명의 사원 정보를 기록할 수 있게 객체 배열을 할당하고 반복 문을 사용하여 키보드로 사원 정보를 입력 받도록 구현 2명 정도의 사원 정보를 입력 받아 각 객체에 저장하고 현재까지 기록된 사원들의 정보 출력
-        * * 각 클래스의 setter/getter 메소드는 직접 구현한다.
-        * * Person 매개변수 생성자를 보면 name 필드는 초기화 해주지 않는다.
-        * */
     }
 }

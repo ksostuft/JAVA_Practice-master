@@ -38,6 +38,7 @@ public class ProductController {
                     break;
                 case 9:
                     System.out.println("프로그램을 종료합니다.");
+                    sc.close();
                     return;
             }
         } while (true);
@@ -54,6 +55,8 @@ public class ProductController {
             System.out.print("제품 세금을 입력하세요 : ");
             double tax = sc.nextDouble();
             pro[count++] = new ProductDTO(pId, pName, price, tax);
+        } else {
+            sc.close();
         }
     }
     public void productPrint() {
@@ -74,6 +77,7 @@ public class ProductController {
                 String[] names = pro[i].information().split(" | ");
                 if(names[i].indexOf(findName) != -1) {
                     System.out.print(pro[i].information());
+                    sc.close();
                     break;
                 }
             }
@@ -96,6 +100,7 @@ public class ProductController {
                     System.out.print("제품 세금을 입력하세요 : ");
                     double tax = sc.nextDouble();
                     pro[i] = new ProductDTO(pId, pName, price, tax);
+                    sc.close();
                     break;
                 }
             }
@@ -110,6 +115,7 @@ public class ProductController {
                 String[] names = pro[i].information().split(" | ");
                 if(findName.equals(names[0])) {
                     pro[i] = null;
+                    sc.close();
                     break;
                 }
             }

@@ -23,13 +23,12 @@ public class Application {
             int eng = scanner.nextInt();
             System.out.print("수학점수를 입력해주세요 : ");
             int math = scanner.nextInt();
-            studentDTOS[count] = new StudentDTO(grade, classroom, name, kor
-                    , eng, math);
             studentDTOS[count-1] = new StudentDTO(grade, classroom, name, kor, eng, math);
             System.out.print("계속 추가하시겠습니까? : ");
             if(scanner.next().toUpperCase().equals("Y")) {
                 count++;
             } else {
+                scanner.close();
                 break;
             }
         }
